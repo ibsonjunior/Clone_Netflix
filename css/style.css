@@ -56,14 +56,12 @@ header nav a:hover{
 .serie_principal{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/DARK.jpg');
-
-    height: 758px;
+    height: 100vh;
     background-size:cover;
     background-repeat: no-repeat;
     /*O Display Flex tem como valor default o row, colocando os itens do lado*/
     /*Quando modificamos o valor padrão do display flex, com o flex-direction,
      os eixos X e Y podem se inverter como no caso abaixo*/
-
     display: flex;
     flex-direction: column;
     justify-content: center; /*Virou eixo Y, Segue o flex-direction.*/
@@ -110,8 +108,16 @@ header nav a:hover{
 }
 
 .serie_principal .container{
-    width: 35%;
+    width: 50vw;
 }
+
+.container .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
 
 .box-filme{
     height: 100%;
@@ -120,8 +126,7 @@ header nav a:hover{
 }
 
 h2{
-    margin-left: 30px;  
-    padding-bottom: 30px;
+    margin: 30px;  
     font-size: 30px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
